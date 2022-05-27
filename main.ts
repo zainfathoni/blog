@@ -1,9 +1,17 @@
 import blog, { ga, redirects } from 'https://deno.land/x/blog@0.1.0/blog.tsx'
 
+const header = `![](/images/zain.png)
+# Zain Fathoni
+
+* me@zainf.dev
+* https://github.com/zainfathoni
+* https://www.linkedin.com/in/zainfathoni/
+* Twitter: @zainfathoni`
+
 blog({
   title: 'Pejuang Kode',
   author: 'Zain Fathoni',
-  header: 'This is my new blog',
+  header,
   style: 'body { padding: 32px 0; background-color: #f0f0f0; }',
 
   // middlewares: [
@@ -15,7 +23,7 @@ blog({
   // pathname specified in a key will redirect to pathname in the value.
   // redirects({
   //  "/hello_world.html": "/hello_world",
-  // }),
+  // })
 
   // ]
 })
